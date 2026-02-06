@@ -1,16 +1,16 @@
 class Employee {
-   
+    void display() {
+        System.out.println("Name of class is Employee");
+    }
 }
+public class Engineer extends Employee {
+    void display() {
+        System.out.println("Name of class is Engineer");
+        super.display();   // calling base class method
+    }
+    public static void main(String[] args) {
 
-class Engineer extends Employee {
-    // TODO: Override display() method
-    // 1. Print "Name of class is Engineer"
-    // 2. Call super.display() to print the parent's message
-}
-
-public class MethodOverriding {
-   
-        // TODO: Create an Engineer object
-        // TODO: Call the display() method
-    
+        Engineer e = new Engineer();
+        e.display();
+    }
 }
