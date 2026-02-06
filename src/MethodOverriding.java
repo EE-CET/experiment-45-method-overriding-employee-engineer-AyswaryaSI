@@ -6,7 +6,7 @@ class Employee {
 class Engineer extends Employee {
     void display() {
         System.out.println("Name of class is Engineer");
-        super.display();   // call base class method
+        super.display();
     }
 }
 public class MethodOverriding {
